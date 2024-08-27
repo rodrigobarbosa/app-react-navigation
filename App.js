@@ -1,24 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+// import { StatusBar } from 'expo-status-bar';
+// import React from 'react';
+// import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>MEXENDO NO TEXTO PELA PRIMEIRA VEZ</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+// export default function App() {
+//   return (
+//     <View style={styles.container}>
+//       <Text>MEXENDO NO TEXTO PELA PRIMEIRA VEZ</Text>
+//       <StatusBar style="auto" />
+//     </View>
+//   );
+// }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+// });
 
 // import React, { useRef } from 'react';
 // import { View, Text, Animated, TouchableWithoutFeedback, StyleSheet } from 'react-native';
@@ -237,40 +237,40 @@ const styles = StyleSheet.create({
 
 // export default EmailInputComponent;
 
-// import React, { useRef, useEffect } from 'react';
-// import { View, Text, Animated, StyleSheet } from 'react-native';
+import React, { useRef, useEffect } from 'react';
+import { View, Text, Animated, StyleSheet } from 'react-native';
 
-// const AnimatedTextComponent = () => {
-//   const fadeAnim = useRef(new Animated.Value(0)).current;
+const AnimatedTextComponent = () => {
+  const fadeAnim = useRef(new Animated.Value(0)).current;
 
-//   useEffect(() => {
-//     Animated.timing(fadeAnim, {
-//       toValue: 1,
-//       duration: 2000,
-//       useNativeDriver: true,
-//     }).start();
-//   }, [fadeAnim]);
+  useEffect(() => {
+    Animated.timing(fadeAnim, {
+      toValue: 1,
+      duration: 2000,
+      useNativeDriver: true,
+    }).start();
+  }, [fadeAnim]);
 
-//   return (
-//     <View style={styles.container}>
-//       <Animated.Text style={[styles.text, { opacity: fadeAnim }]}>
-//         Bem-vindo ao React Native!
-//       </Animated.Text>
-//     </View>
-//   );
-// };
+  return (
+    <View style={styles.container}>
+      <Animated.Text style={[styles.text, { opacity: fadeAnim }]}>
+        Bem-vindo ao React Native!
+      </Animated.Text>
+    </View>
+  );
+};
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//   },
-//   text: {
-//     fontSize: 24,
-//     color: 'blue',
-//   },
-// });
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  text: {
+    fontSize: 24,
+    color: 'blue',
+  },
+});
 
-// export default AnimatedTextComponent;
+export default AnimatedTextComponent;
 
